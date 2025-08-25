@@ -1,29 +1,61 @@
+body {
+  font-family: 'Anuphan', sans-serif; /* กำหนดฟอนต์สำหรับทั้งหน้า */
+}
+
 .home-container {
   text-align: center;
+  background-color: #ebebeb;
 }
 
 .home-header {
   background-color: #4CAF50;
   color: white;
-  padding: 20px;
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
-
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 100%;
-  grid-column: 100%;
+  grid-auto-rows: 42%;
   gap: 5%;
   padding: 20px;
-  margin-top: 10%;
+  margin-top: 1%;
+  border-radius: 60px;
 }
 
 .home-item {
   background-color: #fdfffd;
   padding: 20%;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;;
+  border-radius: 40px;
+  border: #bccebd 2px solid;
+  font-size: 25px;
+  font-weight: bold;
   color: #388E3C;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-icon-report {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  content: center;
+}
+.home-icon-status {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  content: center;
+}
+.home-icon-history {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  content: center;
+}
+.home-icon-contact {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }

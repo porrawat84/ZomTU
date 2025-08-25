@@ -1,6 +1,6 @@
 import React from 'react';
 import './login.css'; 
-import logo from './image/demologo.png'; 
+import logo from './image/logo.png'; 
 
 function Login({ onSignIn }) {
   return (
