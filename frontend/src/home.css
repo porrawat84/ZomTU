@@ -11,16 +11,19 @@
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-auto-rows: 100%;
+  grid-column: 100%;
+  gap: 5%;
   padding: 20px;
+  margin-top: 10%;
 }
 
 .home-item {
-  background-color: #E8F5E9;
-  padding: 20px;
+  background-color: #fdfffd;
+  padding: 20%;
   border-radius: 8px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bold;;
   color: #388E3C;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

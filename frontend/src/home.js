@@ -6,7 +6,7 @@ function Home() {
     <div className="home-container">
       {/* Header */}
       <header className="home-header">
-        <h1>ซ่อมheeซ่อมtad</h1>
+        <h1>ซ่อมTU</h1>
       </header>
 
       {/* Grid ข้อความ */}
@@ -16,6 +16,10 @@ function Home() {
         <div className="home-item">ประวัติการแจ้ง</div>
         <div className="home-item">ติดต่อเจ้าหน้าที่</div>
       </div>
+        {/* Footer */}
+        <footer className="home-footer">
+            <p>Cyberpink developer Team</p>
+        </footer>
     </div>
   );
 }

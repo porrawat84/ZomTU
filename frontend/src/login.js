@@ -1,12 +1,13 @@
 import React from 'react';
-import './login.css'; // Import CSS สำหรับหน้า Login
+import './login.css'; 
+import logo from './image/demologo.png'; 
 
 function Login({ onSignIn }) {
   return (
     <div className="login-container">
-      {/* โลโก้และข้อความ */}
+      {/* โลโก้*/}
       <div className="login-header">
-        <h1>ซ่อม TU </h1>
+        <img src={logo} alt="logo" className="login-logo" />
       </div>
 
       {/* ฟอร์มสำหรับเบอร์โทรและรหัสผ่าน */}
