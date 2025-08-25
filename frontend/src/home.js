@@ -1,29 +1,20 @@
 import React from 'react';
-import './home.css'; // Import the CSS file
+import './home.css'; // Import CSS สำหรับหน้า Home
 
 function Home() {
-  const handleReport = () => {
-    console.log('แจ้งเหตุ');
-    // Add logic for reporting an incident
-  };
-
-  const handleStatus = () => {
-    console.log('ดูสถานะ');
-    // Add logic for viewing status
-  };
-
-  const handleHistory = () => {
-    console.log('ดูประวัติการแจ้ง');
-    // Add logic for viewing history
-  };
-
   return (
     <div className="home-container">
-      <h1>Welcome to the Home Page</h1>
-      <div className="button-container">
-        <button className="home-button" onClick={handleReport}>แจ้งเหตุ</button>
-        <button className="home-button" onClick={handleStatus}>ดูสถานะ</button>
-        <button className="home-button" onClick={handleHistory}>ดูประวัติการแจ้ง</button>
+      {/* Header */}
+      <header className="home-header">
+        <h1>ซ่อมheeซ่อมtad</h1>
+      </header>
+
+      {/* Grid ข้อความ */}
+      <div className="home-grid">
+        <div className="home-item">แจ้งเหตุ</div>
+        <div className="home-item">ตรวจสอบสถานะ</div>
+        <div className="home-item">ประวัติการแจ้ง</div>
+        <div className="home-item">ติดต่อเจ้าหน้าที่</div>
       </div>
     </div>
   );

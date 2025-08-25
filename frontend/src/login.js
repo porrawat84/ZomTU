@@ -1,45 +1,28 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './login.css';
+import React from 'react';
+import './login.css'; // Import CSS สำหรับหน้า Login
 
-function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    console.log('Username:', username);
-    console.log('Password:', password);
-    navigate('/home');
-  };
-
+function Login({ onSignIn }) {
   return (
     <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleLogin} className="login-form">
-        <div className="input-group">
-          <label htmlFor="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit" className="login-button">Login</button>
+      {/* โลโก้และข้อความ */}
+      <div className="login-header">
+        <h1>ซ่อม TU </h1>
+      </div>
+
+      {/* ฟอร์มสำหรับเบอร์โทรและรหัสผ่าน */}
+      <form className="login-form" onSubmit={(e) => {
+        e.preventDefault();
+        onSignIn();
+      }}>
+        <input type="text" placeholder="เบอร์โทร" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" className="login-button">Sign in</button>
       </form>
+
+      {/* ลิงก์ Apply Now */}
+      <p className="login-footer">
+        Join our community? <a href="#apply">Apply Now</a>
+      </p>
     </div>
   );
 }
