@@ -4,15 +4,17 @@ import report from './image/report.png';
 import checkstatus from './image/checklist.png';
 import history from './image/history.png';
 import contact from './image/contact.png';
+import logo from "./image/logo.png"; 
 
 function Home() {
   return (
     <div className="home-container">
       {/* Header */}
       <header className="home-header">
-        <h1> ซ่อมTU</h1>
-        <p>บริการแจ้งซ่อมสำหรับนักศึกษา บุคลากรและบุคคลทั่วไปในมหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</p>
-        <p>โดย ทีมCyberPink</p>
+        <div className="home-header">
+              <img src={logo} alt="logo" className="home-logo" />
+              </div>
+
       </header>
 
       {/* Grid ข้อความ */}

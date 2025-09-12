@@ -6,9 +6,12 @@ body {
   text-align: center;
   background-color: #ebebeb;
 }
-
+.home-logo {
+  width: 80%;
+  margin-bottom: 0px;
+}
 .home-header {
-  background-color: #4CAF50;
+  background-color: #f3f6f6;
   color: white;
   width: 100%;
   padding: 5px 20px;
@@ -26,19 +29,35 @@ body {
 }
 
 .home-item {
-  background-color: #fdfffd;
+  background-color: #e5eee5;
   padding: 20%;
   border-radius: 40px;
-  border: #bccebd 2px solid;
+  border: #dad4d4 2px solid;
   font-size: 25px;
   font-weight: bold;
-  color: #388E3C;
+  color: #0c0c0c;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.home-item:nth-child(1) {
+  background-color: #33C0B3; 
+}
+
+.home-item:nth-child(2) {
+  background-color: #8AC6FF; 
+}
+
+.home-item:nth-child(3) {
+  background-color: #EFCBD1; 
+}
+
+.home-item:nth-child(4) {
+  background-color: #f0dd8a;
 }
 
 .home-icon-report {
   width: 120px;
   height: 120px;
+
   margin-bottom: 10px;
   content: center;
 }
