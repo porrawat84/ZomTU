@@ -17,7 +17,7 @@ function Home() {
 
       </header>
 
-      {/* Grid ข้อความ */}
+      {/* Grid */}
       <div className="home-grid">
         <div className="home-item">
           <img src={report} alt="แจ้งเหตุ" className="home-icon-report" />
