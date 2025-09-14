@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.css'; // Import CSS สำหรับหน้า Home
+import './home.css';
 import report from './image/report.png';
 import checkstatus from './image/checklist.png';
 import history from './image/history.png';
@@ -14,10 +14,9 @@ function Home() {
         <div className="home-header">
               <img src={logo} alt="logo" className="home-logo" />
               </div>
-
       </header>
 
-      {/* Grid */}
+      {/* Grid ข้อความ */}
       <div className="home-grid">
         <div className="home-item">
           <img src={report} alt="แจ้งเหตุ" className="home-icon-report" />

@@ -2,8 +2,8 @@
   background-color: #aae0aa;
   color: white;
   text-align: center;
-  padding: 2;
-  height: 100vh;
+  padding: 20px;
+  height: 100%;
 }
 .signup-logo {
   width: 70%;
@@ -49,6 +49,6 @@
 }
 
 .signup-footer a {
-  color: rgb(124, 61, 61);
+  color: white;
   text-decoration: underline;
 }
